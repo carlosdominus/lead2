@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target } from 'lucide-react';
+import { Target, MessageCircle } from 'lucide-react';
 
 interface BioGeneratorSectionProps {
   onCtaClick: () => void;
