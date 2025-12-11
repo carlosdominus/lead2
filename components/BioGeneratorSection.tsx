@@ -43,27 +43,54 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
           </button>
         </div>
 
-        {/* Visual Representation of Teasing */}
-        <div className="w-full max-w-md mx-auto relative">
-           {/* Image Container */}
-           <div className="relative z-10">
-              <img 
-                src="https://i.ibb.co/Df7VcDVp/webp.webp" 
-                alt="Teasing Technique Chat Example" 
-                className="w-full h-auto rounded-[2rem] shadow-[0_20px_60px_-15px_rgba(29,46,92,0.15)] border border-slate-100"
-              />
+        {/* Chat Mockup Container */}
+        <div className="w-full max-w-[400px] mx-auto relative">
+           <div className="bg-white rounded-[2rem] p-6 shadow-2xl border border-slate-100 transform rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
+              
+              {/* Chat Header */}
+              <div className="flex items-center gap-3 mb-6 border-b border-slate-50 pb-4">
+                 <div className="relative">
+                    {/* PROFILE PICTURE HERE */}
+                    <img 
+                      src="https://i.ibb.co/Df7VcDVp/webp.webp" 
+                      alt="Profile" 
+                      className="w-10 h-10 rounded-full object-cover border-2 border-pink-100"
+                    />
+                    <div className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 rounded-full border-2 border-white"></div>
+                 </div>
+                 <div>
+                    <p className="text-sm font-bold text-slate-800">Sarah</p>
+                    <p className="text-xs text-slate-400">Active now</p>
+                 </div>
+              </div>
+
+              {/* Chat Messages */}
+              <div className="space-y-4">
+                 {/* Her Message */}
+                 <div className="flex items-end gap-2">
+                    <img 
+                      src="https://i.ibb.co/Df7VcDVp/webp.webp" 
+                      className="w-6 h-6 rounded-full object-cover mb-1"
+                      alt="Avatar"
+                    />
+                    <div className="bg-slate-100 text-slate-700 p-3 rounded-2xl rounded-bl-sm text-sm font-medium leading-relaxed max-w-[85%]">
+                       Oh, you're new here huh? Don't worry, you just found yourself a tour guide 😉
+                    </div>
+                 </div>
+
+                 {/* Your Message */}
+                 <div className="flex justify-end">
+                    <div className="bg-[#1786FF] text-white p-3 rounded-2xl rounded-br-sm text-sm font-medium leading-relaxed max-w-[85%] shadow-md shadow-blue-200">
+                       But I might take you up on that offer...
+                    </div>
+                 </div>
+              </div>
+
            </div>
 
-           {/* Decorative elements */}
-           <div className="absolute top-1/2 -right-12 transform -translate-y-1/2 hidden md:block animate-float-delayed">
-              <div className="bg-white p-3 rounded-2xl shadow-lg border border-slate-100">
-                 <span className="text-2xl">😂</span>
-              </div>
-           </div>
-           <div className="absolute top-1/2 -left-12 transform -translate-y-1/2 hidden md:block animate-float">
-              <div className="bg-white p-3 rounded-2xl shadow-lg border border-slate-100">
-                 <span className="text-2xl">🔥</span>
-              </div>
+           {/* Floating Reactions */}
+           <div className="absolute top-1/2 -right-8 bg-white p-3 rounded-full shadow-lg animate-float-delayed hidden md:block">
+              <span className="text-2xl">😂</span>
            </div>
         </div>
 

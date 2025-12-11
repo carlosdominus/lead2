@@ -40,16 +40,60 @@ export const ConversationModeSection: React.FC<ConversationModeSectionProps> = (
             </button>
         </div>
 
-        {/* Visual Composition */}
-        <div className="relative w-full max-w-[400px] mx-auto flex flex-col items-center">
-             <img 
-                src="https://i.ibb.co/pj7Q7d3h/webp2.webp" 
-                alt="Flirting Technique Example"
-                className="w-full h-auto rounded-[2rem] border border-gray-800 shadow-2xl relative z-10"
-             />
-             
+        {/* Visual Composition - Chat UI */}
+        <div className="relative w-full max-w-[400px] mx-auto">
+             <div className="bg-[#0F0F13] border border-gray-800 rounded-[2rem] p-6 shadow-2xl relative z-10">
+                
+                {/* Chat Header */}
+                <div className="flex items-center gap-4 mb-6 border-b border-white/5 pb-4">
+                   <div className="relative">
+                      {/* PROFILE PICTURE HERE */}
+                      <img 
+                        src="https://i.ibb.co/pj7Q7d3h/webp2.webp" 
+                        alt="Profile" 
+                        className="w-12 h-12 rounded-full object-cover ring-2 ring-pink-500/30"
+                      />
+                      <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full ring-2 ring-[#0F0F13]"></div>
+                   </div>
+                   <div>
+                      <h3 className="text-white font-bold">Jessica</h3>
+                      <p className="text-xs text-pink-400 font-medium">Online now</p>
+                   </div>
+                </div>
+
+                {/* Messages */}
+                <div className="space-y-4">
+                   {/* Him */}
+                   <div className="flex justify-end">
+                      <div className="bg-blue-600 text-white p-4 rounded-2xl rounded-tr-sm text-sm leading-relaxed max-w-[90%]">
+                         I thought you were really beautiful, I had to come over here and say hi
+                      </div>
+                   </div>
+
+                   {/* Her (with small profile pic) */}
+                   <div className="flex items-end gap-3">
+                      <img 
+                        src="https://i.ibb.co/pj7Q7d3h/webp2.webp" 
+                        className="w-8 h-8 rounded-full object-cover mb-1 opacity-80"
+                        alt="Avatar"
+                      />
+                      <div className="bg-white/10 text-gray-200 p-4 rounded-2xl rounded-tl-sm text-sm leading-relaxed border border-white/5">
+                         Omg that's so sweet 🙈 you definitely made my day!
+                      </div>
+                   </div>
+
+                   {/* Him */}
+                   <div className="flex justify-end">
+                      <div className="bg-blue-600 text-white p-4 rounded-2xl rounded-tr-sm text-sm leading-relaxed max-w-[90%] flex items-center gap-2">
+                         What's your name? 😌
+                      </div>
+                   </div>
+                </div>
+
+             </div>
+
              {/* Floating Badge */}
-             <div className="absolute -right-12 top-1/2 -translate-y-1/2 bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-2xl shadow-xl hidden md:block animate-float z-20">
+             <div className="absolute -right-8 top-1/2 -translate-y-1/2 bg-white/10 backdrop-blur-xl border border-white/20 p-3 rounded-2xl shadow-xl hidden md:block animate-float z-20">
                 <span className="text-2xl">😍</span>
              </div>
         </div>
