@@ -52,7 +52,7 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
                  <div className="relative">
                     {/* PROFILE PICTURE HERE */}
                     <img 
-                      src="https://i.ibb.co/Df7VcDVp/webp.webp" 
+                      src="https://i.ibb.co/X6CkK7R/photo-1556151994-b611e5ab3675-1.webp" 
                       alt="Profile" 
                       className="w-10 h-10 rounded-full object-cover border-2 border-pink-100"
                     />
@@ -69,7 +69,7 @@ export const BioGeneratorSection: React.FC<BioGeneratorSectionProps> = ({ onCtaC
                  {/* Her Message */}
                  <div className="flex items-end gap-2">
                     <img 
-                      src="https://i.ibb.co/Df7VcDVp/webp.webp" 
+                      src="https://i.ibb.co/X6CkK7R/photo-1556151994-b611e5ab3675-1.webp" 
                       className="w-6 h-6 rounded-full object-cover mb-1"
                       alt="Avatar"
                     />
