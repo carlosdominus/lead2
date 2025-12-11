@@ -49,7 +49,7 @@ export const ConversationModeSection: React.FC<ConversationModeSectionProps> = (
                    <div className="relative">
                       {/* PROFILE PICTURE HERE */}
                       <img 
-                        src="https://i.ibb.co/pj7Q7d3h/webp2.webp" 
+                        src="https://i.ibb.co/X6CkK7R/photo-1556151994-b611e5ab3675-1.webp" 
                         alt="Profile" 
                         className="w-12 h-12 rounded-full object-cover ring-2 ring-pink-500/30"
                       />
@@ -73,7 +73,7 @@ export const ConversationModeSection: React.FC<ConversationModeSectionProps> = (
                    {/* Her (with small profile pic) */}
                    <div className="flex items-end gap-3">
                       <img 
-                        src="https://i.ibb.co/pj7Q7d3h/webp2.webp" 
+                        src="https://i.ibb.co/X6CkK7R/photo-1556151994-b611e5ab3675-1.webp" 
                         className="w-8 h-8 rounded-full object-cover mb-1 opacity-80"
                         alt="Avatar"
                       />
